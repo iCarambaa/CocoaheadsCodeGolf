@@ -27,6 +27,6 @@ import Cocoa
 // wave (as per the above definition).
 //
 // The shortest answer in bytes wins.
-public func isHeatWaveIncludedIn(waves: [Int]) -> Bool {
+public func isHeatWaveIncludedIn(waves w: [Int]) -> Bool {
     return false
 }

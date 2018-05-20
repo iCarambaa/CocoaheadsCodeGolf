@@ -37,16 +37,99 @@ class HeatWavesTests: XCTestCase {
                             [27, 23, 42, 23, 22, 28],
                             [25, 20, 30, 29, 32, 25, 22, 21, 31, 22, 23, 25, 22, 31, 23, 25, 33, 23]]
     
-    func testPositive() {
-        positiveExamples.forEach { measurements in
-            XCTAssertTrue(isHeatWaveIncludedIn(waves: measurements))
-        }
+    func testPositive0() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[0]))
     }
     
-    func testNegative() {
-        negativeExamples.forEach { measurements in
-            XCTAssertFalse(isHeatWaveIncludedIn(waves: measurements))
-        }
+    func testPositive1() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[1]))
     }
     
+    func testPositive2() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[2]))
+    }
+    
+    func testPositive3() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[3]))
+    }
+    
+    func testPositive4() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[4]))
+    }
+    
+    func testPositive5() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[5]))
+    }
+    
+    func testPositive6() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[6]))
+    }
+    
+    func testPositive7() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[7]))
+    }
+    
+    func testPositive8() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[8]))
+    }
+    
+    func testPositive9() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[9]))
+    }
+    
+    func testPositive10() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[10]))
+    }
+    
+    func testPositive11() {
+        XCTAssertTrue(isHeatWaveIncludedIn(waves: positiveExamples[11]))
+    }
+    
+    func testNegative0() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[0]))
+    }
+    
+    func testNegative1() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[1]))
+    }
+    
+    func testNegative2() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[2]))
+    }
+    
+    func testNegative3() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[3]))
+    }
+    
+    func testNegative4() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[4]))
+    }
+    
+    func testNegative5() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[5]))
+    }
+    
+    func testNegative6() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[6]))
+    }
+    
+    func testNegative7() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[7]))
+    }
+    
+    func testNegative8() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[8]))
+    }
+    
+    func testNegative9() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[9]))
+    }
+    
+    func testNegative10() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[10]))
+    }
+    
+    func testNegative11() {
+        XCTAssertFalse(isHeatWaveIncludedIn(waves: negativeExamples[11]))
+    }
 }
