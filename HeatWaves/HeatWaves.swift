@@ -5,9 +5,6 @@
 //  Created by Sven Titgemeyer on 20.05.18.
 //  Copyright © 2018 Cocoaheads Aachen. All rights reserved.
 //
-
-import Cocoa
-
 // Background
 //
 // The Royal Netherlands Meteorological Institute defines a heat wave* as a
