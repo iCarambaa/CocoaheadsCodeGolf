@@ -111,6 +111,7 @@
 				269A58CC20B1822300872989 /* Frameworks */,
 				269A58CD20B1822300872989 /* Headers */,
 				269A58CE20B1822300872989 /* Resources */,
+				269A58EC20B2CBF000872989 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,6 +194,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		269A58EC20B2CBF000872989 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = ./HeatWaves/count.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		269A58CB20B1822300872989 /* Sources */ = {

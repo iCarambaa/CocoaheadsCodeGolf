@@ -29,4 +29,4 @@ import Cocoa
 // The shortest answer in bytes wins.
 public func isHeatWaveIncludedIn(waves w: [Int]) -> Bool {
     return false
-}
+} // 18 bytes.
