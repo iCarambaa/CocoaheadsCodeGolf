@@ -31,6 +31,7 @@
 		269A58DD20B1822300872989 /* HeatWavesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatWavesTests.swift; sourceTree = "<group>"; };
 		269A58DF20B1822300872989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		269A58E720B1823C00872989 /* HeatWaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatWaves.swift; sourceTree = "<group>"; };
+		269A58ED20B2D13D00872989 /* CharacterCount.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CharacterCount.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 			children = (
 				269A58D220B1822300872989 /* HeatWaves.h */,
 				269A58E720B1823C00872989 /* HeatWaves.swift */,
+				269A58ED20B2D13D00872989 /* CharacterCount.txt */,
 				269A58D320B1822300872989 /* Info.plist */,
 			);
 			path = HeatWaves;

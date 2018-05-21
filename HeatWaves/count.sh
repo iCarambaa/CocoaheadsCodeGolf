@@ -8,11 +8,11 @@ solution=${solution#*\{}
 
 characters=${#solution}
 
-echo "\n $characters characters"
+echo "$characters bytes." > "./HeatWaves/CharacterCount.txt"
 
 heatWaves=$(<HeatWaves/HeatWaves.swift)
 heatWaves=${heatWaves%\}*}
 
 append="} // $characters bytes."
 heatWaves+="$append"
-echo "$heatWaves" > "./HeatWaves/HeatWaves.swift"
+#echo "$heatWaves" > "./HeatWaves/HeatWaves.swift"

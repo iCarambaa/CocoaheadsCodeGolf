@@ -5,6 +5,7 @@
 //  Created by Sven Titgemeyer on 20.05.18.
 //  Copyright © 2018 Cocoaheads Aachen. All rights reserved.
 //
+
 // Background
 //
 // The Royal Netherlands Meteorological Institute defines a heat wave* as a
@@ -26,4 +27,4 @@
 // The shortest answer in bytes wins.
 public func isHeatWaveIncludedIn(waves w: [Int]) -> Bool {
     return false
-} // 18 bytes.
+}
