@@ -3,4 +3,6 @@ os: osx
 osx_image: xcode9.3
 xcode_project: CocoaheadsCodeGolf.xcodeproj
 xcode_scheme: HeatWaves
-script: xctool -project CocoaheadsCodeGolf.xcodeproj -scheme HeatWaves run-tests
+script:
+ - xcodebuild -project CocoaheadsCodeGolf.xcodeproj -scheme HeatWaves build-for-testing
+ - xctool -project CocoaheadsCodeGolf.xcodeproj -scheme HeatWaves run-tests
