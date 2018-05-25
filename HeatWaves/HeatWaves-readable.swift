@@ -2,8 +2,9 @@
 //  HeatWaves-readable.swift
 //  HeatWaves
 //
-//  Created by Sven Titgemeyer on 20.05.18.
-//  Edited by Udo Borkowski on 2018-05-25.
+//  Solution by Udo Borkowski (2018-05-25)
+//
+//  FOR THE PUBLIC DOMAIN
 //
 
 // Background
@@ -30,5 +31,52 @@
 // in 'HeatWaves.swift' but is intended for a reader who wants to understand
 // the code better. So it includes comments, whitespaces, better names, ....)
 public func isHeatWaveIncludedIn_readable(waves w: [Int]) -> Bool {
-    return false // no heat wave found
+
+    // This solution is similar to "solution-99-OldSchool" but it only needs
+    // one variable 'a' to count the days ≥25°C (but <30°C) resp. days ≥30°C.
+    //
+    // To achieve this the variable 'a' holds the count as factors of prim numbers. I.e.
+    // (!!!) to represent n days ≥25°C (but <30°C) and m days ≥30°C we use the formula 2^n*3^m
+    
+    var a = 1                   // Reset the counter. As we use multiplication this is 1, not 0
+    for i in w {                // iterate over the array of day temperatures
+        if i > 24 {             //     if the day's temperature was ≥ 25 (*)
+            a *= i > 29 ?       //         if the day's temperature was even ≥ 30 (*)
+                3     //             increment the number of days ≥30°C // see (!!!)
+                :       //         otherwise
+            2     //             increment the number of days ≥25°C (but <30°C) // see (!!!)
+            //
+            if a % 27 == 0 &&   //         When we have at least 3 days ≥30°C (**)
+                a > 81 {  //         and 2 more days ≥25°C (***)
+                return 1 > 0    //             we have a heat wave and return true (****)
+            }                   //
+        } else {                //     if the day's temperature was < 25
+            a = 1               //         this day cannot be in a heat wave and we reset the number of days ≥25°C / ≥30°C
+        }                       //
+    }                           //
+    // we iterated over the full array but found no heat wave,
+    return 1<0                  // i.e. return false (*****)
+    
+    // (*)     instead of "...  >= intConst" use "... > intConst-1" to save 1 byte (">=" vs ">")
+    //
+    // (**)    3 days ≥30°C means 'a' contains at least the factors 3*3*3 == 27. To check this we
+    //         just need to divide 'a' by 27 and check if the remainder is 0 ("modulo").
+    //
+    // (***)   We already know we have at least 3 days ≥30°C, i.e. 'a' contains 3*3*3 (see **).
+    //         Now lets check some cases:
+    //
+    //         | # ≥25°C but <30°C | # ≥30°C |   a | isHeadWave? |
+    //         |-------------------+---------+-----+-------------|
+    //         | 0                 | 3       |  27 | false       |
+    //         | 1                 | 3       |  54 | false       |
+    //         | 2                 | 3       | 108 | true        |
+    //         | 0                 | 4       |  81 | false       |
+    //         | 1                 | 4       | 162 | true        |
+    //
+    //         As we can see, when a > 81 (and there are at least 3 days ≥30°C) we have heat wave.
+    //
+    // (****)  "1>0" evalutes to true but needs one byte less than the Bool literal "true"
+    //
+    // (*****) "1<0" evalutes to false but needs two bytes less than the Bool literal "false"
+
 }
