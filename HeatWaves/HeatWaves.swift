@@ -2,8 +2,9 @@
 //  HeatWaves.swift
 //  HeatWaves
 //
-//  Created by Sven Titgemeyer on 20.05.18.
-//  Copyright © 2018 Cocoaheads Aachen. All rights reserved.
+//  Solution by Udo Borkowski (2018-05-25)
+//
+//  FOR THE PUBLIC DOMAIN
 //
 
 // Background
@@ -25,6 +26,15 @@
 // wave (as per the above definition).
 //
 // The shortest answer in bytes wins.
+//
+// (see "HeatWaves-readable.swift" for a readable/commented version of this code)
+//
+// NOTICE: The following code gives a compile error when running in Xcode 4.1 (Swift 4.1):
+//
+//      "Expression was too complex to be solved in reasonable time; consider breaking up the expression into distinct sub-expressions"
+//
+// This is most likely caused by Swift's algorithm that resolves overloaded functions. In case this algorithm
+// is improved in a later Swift version this code may compile and run....
 public func isHeatWaveIncludedIn(waves w: [Int]) -> Bool {
-    return false
+    return w.reduce(1,{($1>24 ?$0*($1>29 ?3:2):$0>0 ?1:0){$0%27==0&&$0>81 ?0:$0}})<1
 }
