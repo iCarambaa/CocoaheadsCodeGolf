@@ -1,9 +1,9 @@
 //
-//  HeatWaves.swift
+//  HeatWaves-readable.swift
 //  HeatWaves
 //
 //  Created by Sven Titgemeyer on 20.05.18.
-//  Copyright © 2018 Cocoaheads Aachen. All rights reserved.
+//  Edited by Udo Borkowski on 2018-05-25.
 //
 
 // Background
@@ -26,7 +26,9 @@
 //
 // The shortest answer in bytes wins.
 //
-// (see "HeadWaves-readable.swift" for a readable/commented version of this code)
-public func isHeatWaveIncludedIn(waves w: [Int]) -> Bool {
-    return false
+// (This function contains the same code/algorithm as 'isHeatWaveIncludedIn'
+// in 'HeadWaves.swift' but is intended for a reader who wants to understand
+// the code better. So it includes comments, whitespaces, better names, ....)
+public func isHeatWaveIncludedIn_readable(waves w: [Int]) -> Bool {
+    return false // no head wave found
 }
