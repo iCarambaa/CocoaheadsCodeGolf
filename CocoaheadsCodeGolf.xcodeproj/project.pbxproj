@@ -11,6 +11,7 @@
 		269A58DE20B1822300872989 /* HeatWavesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A58DD20B1822300872989 /* HeatWavesTests.swift */; };
 		269A58E020B1822300872989 /* HeatWaves.h in Headers */ = {isa = PBXBuildFile; fileRef = 269A58D220B1822300872989 /* HeatWaves.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		269A58E820B1823C00872989 /* HeatWaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269A58E720B1823C00872989 /* HeatWaves.swift */; };
+		3448F28C20B80F38008CC209 /* HeatWaves-readable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3448F28B20B80F38008CC209 /* HeatWaves-readable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 		269A58DF20B1822300872989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		269A58E720B1823C00872989 /* HeatWaves.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatWaves.swift; sourceTree = "<group>"; };
 		269A58ED20B2D13D00872989 /* CharacterCount.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CharacterCount.txt; sourceTree = "<group>"; };
+		3448F28B20B80F38008CC209 /* HeatWaves-readable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeatWaves-readable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				269A58E720B1823C00872989 /* HeatWaves.swift */,
 				269A58ED20B2D13D00872989 /* CharacterCount.txt */,
 				269A58D320B1822300872989 /* Info.plist */,
+				3448F28B20B80F38008CC209 /* HeatWaves-readable.swift */,
 			);
 			path = HeatWaves;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3448F28C20B80F38008CC209 /* HeatWaves-readable.swift in Sources */,
 				269A58E820B1823C00872989 /* HeatWaves.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
