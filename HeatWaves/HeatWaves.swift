@@ -2,8 +2,9 @@
 //  HeatWaves.swift
 //  HeatWaves
 //
-//  Created by Sven Titgemeyer on 20.05.18.
-//  Copyright © 2018 Cocoaheads Aachen. All rights reserved.
+//  Solution by Udo Borkowski (2018-05-25)
+//
+//  FOR THE PUBLIC DOMAIN
 //
 
 // Background
@@ -28,5 +29,5 @@
 //
 // (see "HeatWaves-readable.swift" for a readable/commented version of this code)
 public func isHeatWaveIncludedIn(waves w: [Int]) -> Bool {
-    return false
+    return w.reduce(1,{let n=$1>24 ?$0*($1>29 ?3:2):$0>0 ?1:0;return n%27==0&&n>81 ?0:n})<1
 }
