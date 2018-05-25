@@ -26,7 +26,7 @@
 //
 // The shortest answer in bytes wins.
 //
-// (see "HeadWaves-readable.swift" for a readable/commented version of this code)
+// (see "HeatWaves-readable.swift" for a readable/commented version of this code)
 public func isHeatWaveIncludedIn(waves w: [Int]) -> Bool {
     return false
 }

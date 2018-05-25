@@ -27,8 +27,8 @@
 // The shortest answer in bytes wins.
 //
 // (This function contains the same code/algorithm as 'isHeatWaveIncludedIn'
-// in 'HeadWaves.swift' but is intended for a reader who wants to understand
+// in 'HeatWaves.swift' but is intended for a reader who wants to understand
 // the code better. So it includes comments, whitespaces, better names, ....)
 public func isHeatWaveIncludedIn_readable(waves w: [Int]) -> Bool {
-    return false // no head wave found
+    return false // no heat wave found
 }
