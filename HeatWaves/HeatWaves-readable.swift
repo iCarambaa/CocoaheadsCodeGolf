@@ -2,8 +2,9 @@
 //  HeatWaves-readable.swift
 //  HeatWaves
 //
-//  Created by Sven Titgemeyer on 20.05.18.
-//  Edited by Udo Borkowski on 2018-05-25.
+//  Solution by Udo Borkowski (2018-05-25)
+//
+//  FOR THE PUBLIC DOMAIN
 //
 
 // Background
@@ -30,5 +31,25 @@
 // in 'HeatWaves.swift' but is intended for a reader who wants to understand
 // the code better. So it includes comments, whitespaces, better names, ....)
 public func isHeatWaveIncludedIn_readable(waves w: [Int]) -> Bool {
-    return false // no heat wave found
+    var a = 0, b = 0            // 'a' counts days ≥25°C, 'b' counts days ≥30°C, in the "current" series
+    for i in w {                // iterate over the array of day temperatures
+        if i > 24 {             //     if the day's temperature was ≥ 25 (*)
+            a += 1              //         increment the number of days ≥25°C
+            if i > 29 {         //         if the day's temperature was even ≥ 30 (*)
+                b += 1          //             increment the number of days ≥30°C
+            }                   //
+            if a > 4 && b > 2 { //         if there are at least 5 days with ≥25°C and at least 3 ≥30°C in the current series (*)
+                return 1>0      //             we found a heat wave, i.e. return true (**)
+            }                   //
+        } else {                //     if the day's temperature was < 25
+            a = 0               //         this day cannot be in a heat wave and we reset the number of days ≥25°C / ≥30°C
+            b = 0               //
+        }                       //
+    }                           //
+    // we iterated over the full array but found no heat wave,
+    return 1<0                // i.e. return false (***)
+    
+    // (*)   instead of "...  >= intConst" use "... > intConst-1" to save 1 byte (">=" vs ">")
+    // (**)  "1>0" evalutes to true but needs one byte less than the Bool literal "true"
+    // (***) "1<0" evalutes to false but needs two bytes less than the Bool literal "false"
 }
