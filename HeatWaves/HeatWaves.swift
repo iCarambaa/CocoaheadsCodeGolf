@@ -25,7 +25,7 @@
 // wave (as per the above definition).
 //
 // The shortest answer in bytes wins.
-public func isHeatWaveIncludedIn(waves w: [Int]) -> Bool {
-    return w.reduce(1){$1<25 ?($0<1 ?0:1):$0*($1<30 ?2:6)%864}<1
+public var isHeatWaveIncludedIn:([Int])->Bool = {
+    $0.reduce(1){$1<25 ?($0<1 ?0:1):$0*($1<30 ?2:6)%864}<1
 }
 
