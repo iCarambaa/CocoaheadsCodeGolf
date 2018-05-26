@@ -27,7 +27,7 @@
 //
 // The shortest answer in bytes wins.
 //
-// How does the 64 byte solution work?
+// How does the 56 byte solution work?
 //
 // - The reduce starts with 1 and is multiplied with 2 for numbers >= 25 and
 //   multiplied with 2 and 3 (=6) for numbers >= 30.
