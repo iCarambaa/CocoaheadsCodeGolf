@@ -26,5 +26,5 @@
 //
 // The shortest answer in bytes wins.
 public var isHeatWaveIncludedIn:([Int])->Bool = {
-    $0.reduce(1){$0>0&&$1<25 ?1:$0*($1<30 ?2:6)%864}<1
+    $0.reduce(1){$0>0&&$1<25 ?1:$0*($1<30 ?2:3)%108}<1
 }
