@@ -4,7 +4,7 @@
 //
 //  Created by Sven Titgemeyer on 20.05.18.
 //  Copyright © 2018 Cocoaheads Aachen. All rights reserved.
-//  Solution by Roland Schmitz
+//  Solution by Roland Schmitz, with ideas from Udo Borkowski and a one byte improvement from Mathis Müller
 //
 
 // Background
@@ -27,7 +27,7 @@
 //
 // The shortest answer in bytes wins.
 //
-// How does the 65 byte solution work?
+// How does the 64 byte solution work?
 //
 // - The reduce starts with 1 and is multiplied with 2 for numbers >= 25 and
 //   multiplied with 2 and 3 (=6) for numbers >= 30.
