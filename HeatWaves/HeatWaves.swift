@@ -39,5 +39,5 @@
 //   - 3*3*3: at least 3 of them are >= 30.
 
 public func isHeatWaveIncludedIn(waves w: [Int]) -> Bool {
-    return w.reduce(1,{$0%864>0 ?$1<25 ?1:$0*($1<30 ?2:6):$0})%864==0
+    return w.reduce(1,{$0%864>0 ?$1<25 ?1:$0*($1<30 ?2:6):$0})%864<1
 }
