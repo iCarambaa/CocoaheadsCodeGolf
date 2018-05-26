@@ -4,7 +4,7 @@
 //
 //  Created by Sven Titgemeyer on 20.05.18.
 //  Copyright © 2018 Cocoaheads Aachen. All rights reserved.
-//  Solution by Roland Schmitz, with ideas from Udo Borkowski and a one byte improvement from Mathis Müller
+//  Solution by Roland Schmitz, with ideas from Udo Borkowski and improvements from Mathis Müller
 //
 
 // Background
