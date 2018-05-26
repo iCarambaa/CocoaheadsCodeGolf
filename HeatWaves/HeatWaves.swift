@@ -26,5 +26,5 @@
 //
 // The shortest answer in bytes wins.
 public func isHeatWaveIncludedIn(waves w: [Int]) -> Bool {
-    return false
+    return w.reduce(1,{$0%864>0 ?$1<25 ?1:$0*($1<30 ?2:6):$0})%864==0
 }
