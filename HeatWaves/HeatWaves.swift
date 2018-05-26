@@ -4,6 +4,7 @@
 //
 //  Created by Sven Titgemeyer on 20.05.18.
 //  Copyright © 2018 Cocoaheads Aachen. All rights reserved.
+//  Solution by Roland Schmitz
 //
 
 // Background
@@ -31,7 +32,7 @@
 // - The reduce starts with 1 and is multiplied with 2 for numbers >= 25 and
 //   multiplied with 2 and 3 (=6) for numbers >= 30.
 // - The reduce falls back to 1 if a number is smaller than 25.
-// - If the reduce is once divisible of 864 which is 2*2*2*2*2 * 3*3*3 it does
+// - If the reduce is once divisible by 864 which is 2*2*2*2*2 * 3*3*3 it does
 //   not change its value any more and true is returned.
 // - 864 (2*2*2*2*2 * 3*3*3) can be interpreted as:
 //   - 2*2*2*2*2: contains a sequence with 5 numbers >= 25 and
